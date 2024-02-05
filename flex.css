@@ -1,0 +1,338 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+    font-family: cursive, sans-serif;
+
+}
+
+h1{
+   font-size: 3rem;
+}
+
+h2{
+    font-size: 2rem;
+}
+
+p,a{
+    font-size: 2rem;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul li{
+    list-style: none;
+}
+
+.section{
+    padding: 5rem 0;
+}
+header{
+    background: url(./assets/img/bg-masthead.jpg)no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    opacity: 0.8;
+}
+
+header *{
+    color: whitesmoke;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 3rem;
+}
+
+
+nav ul{
+    display: flex;  
+}
+
+nav ul li{
+    margin-left: 5rem;
+}
+
+nav h1{
+    color: #ff8f70;
+}
+
+header ul a:hover{
+    color: #ff8f70;
+    transition: .5s ease-in-out;
+}
+
+header .hero{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    height: 100vh;
+}
+
+.hero .divider1{
+    height: .4rem;
+    width: 6rem;
+    background-color: #ff8f70;
+    border-radius: 4rem;
+    margin-bottom: 1.5rem;
+}
+
+@media(max-width:500px){
+    nav ul{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header .hero{
+        text-align: center;
+    }
+}
+
+.about-item{
+    display: flex;
+    padding: 3rem 0;
+}
+
+.about-content{
+    width: 50%;
+    text-align: center;
+    margin: auto;
+}
+
+.about .kidist img{
+    height: 10rem;
+    width: 10rem;
+    background-color: antiquewhite;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+.about a{
+    background-color: #ff8f70;
+    margin-bottom: 15rem;
+    padding: .6rem 1.6rem;
+    border-radius: 6rem; 
+    text-align: center;
+    text-decoration: none;
+    color: whitesmoke;
+} 
+
+.about .about-button{
+    margin-top: 2rem;
+}
+
+.about-content .divider1{
+    height: .25rem;
+    width: 4rem;
+    background-color: #ff8f70;
+    border-radius: 4rem;
+    margin-bottom: 1.5rem;
+    margin: auto;
+}
+
+.about-content p{
+    margin-top: 2rem;
+}
+
+@media(max-width:400px){
+    .about-content{
+        width: 90%;
+    }
+}
+
+
+.portfolio{
+    background-color: black;
+    color: black;
+}
+.portfolio-content{
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    flex-wrap: wrap;
+}
+
+.portfolio .card{
+    height: 17rem;
+    width: 30rem;
+    border-radius: 2rem 2rem 0 0;
+
+}
+
+.portfolio .card-1{
+    background-image: url(./assets/img/robotarm.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.portfolio .card-2{
+    background-image: url(./assets/img/mango.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.portfolio .card-3{
+    background-image: url(./assets/img/skin.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.portfolio .first, .second, .third{
+    background-color: white;
+    width: 30rem;
+    height: 40rem;
+    border-radius: 2rem;
+}
+
+.portfolio a{
+    background-color: #ff8f70;
+    color: white;
+    display: block;
+    text-align: center;
+    margin: 4rem 2rem; 
+    padding: .6rem 1.6rem;
+    border-radius: 2rem;
+}
+
+span{
+    text-decoration: underline;
+    font-size: 3rem;
+}
+
+.item:hover{
+     background-color: rgb(173, 165, 165);
+     transform: scale(1.09);
+     transition: .9s ease-in-out;
+}
+
+
+
+.contact{
+    background-color: whitesmoke;
+}
+
+.contact-item{
+    display: flex;
+    justify-content: center;
+}
+
+.right{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2.6rem;
+    background-color: rgb(42, 41, 43);
+    border-radius:  0 2rem  2rem 0;
+    width: 37rem;
+    height: 38rem;
+}
+
+.right *{
+    margin: 0 3rem;
+    padding: 0.5rem;
+    
+}
+
+.right a{
+    background-color: #ff8f70;
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding: .3rem 2rem;
+    border-radius: 1.5rem;
+    width: 27rem;
+    margin-bottom: .5rem;
+}
+
+.contact .image-area{
+    color: whitesmoke;
+    background-image: url(./assets/contact.jpg);
+    background-color: rgb(173, 165, 165);
+    background-size: cover;
+    background-position: center;
+    width: 40rem;
+    border-radius: 2rem 0 0 2rem;
+}
+
+.contact .left-text{
+    padding: 1rem 2rem;
+}
+
+.left-text h1{
+    margin-bottom: 1.5rem;
+}
+
+.left-text p img{
+    margin-right: 1rem;
+    height: 2rem;
+    width: 2rem;
+}
+
+.right input{
+    border-radius: 2rem; 
+    font-size: 1.2rem; 
+}
+
+.right .get{
+    text-decoration: underline;
+    font-size: 2rem;
+    margin-right: 0;
+    padding-right: 0;
+}
+
+
+
+@media(max-width:580px){
+    .contact-item{
+        flex-direction: column;
+        
+    }
+
+    .right{
+        border-radius:  0 0  2rem 2rem;
+        width: 90%;
+        margin: auto;
+    }
+
+    .contact .image-area{
+        border-radius: 2rem 2rem 0 0;
+        width: 90%;
+        margin: auto;
+    }
+
+    .right>textarea{
+        width: 70%;
+        margin: auto;
+    }
+    .right>input{
+        width: 70%;
+        margin: auto;
+    }
+    .right > a{
+        padding: .3rem 1rem;
+        width: 15rem;
+        text-align: center;
+        margin-bottom: 1rem;
+        width: 70%;
+        margin: auto;
+    }
+    .contact-item{
+        margin-left: .5rem;
+    }
+}
+
+.footer{
+    background-color: rgb(65, 60, 60);
+    color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    padding: 2rem 0;
+}
+
